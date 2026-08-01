@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fabricación a medida — Industrias Céspedes</title>
+<meta name="description" content="Fabricamos mobiliario de acero inoxidable a la medida exacta de tu local. Envíanos tus dimensiones o un croquis y te cotizamos.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header data-site-header></header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / A medida</p>
+    <h1>Fabricación a medida</h1>
+    <p>Nuestro diferencial: fabricamos según el espacio real de tu local. Dinos las dimensiones y el uso, y te proponemos la mejor solución.</p>
+  </div>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>Tu espacio manda</h2>
+          <p>No adaptamos tu cocina a un producto estándar: fabricamos el producto a tu cocina. Elige el tipo de acero según el uso (AISI 304 para contacto con alimentos, AISI 430 para estructuras) y el calibre según la exigencia.</p>
+          <div class="grid proceso" style="margin-top:1.5rem">
+            <div class="paso"><h3>Envía medidas</h3><p>Largo, ancho y alto, o una foto del espacio.</p></div>
+            <div class="paso"><h3>Te asesoramos</h3><p>Recomendamos acero, calibre y diseño.</p></div>
+            <div class="paso"><h3>Cotizamos</h3><p>Precio y tiempo de fabricación.</p></div>
+            <div class="paso"><h3>Fabricamos</h3><p>A tu medida exacta, en taller.</p></div>
+          </div>
+          <div class="a-medida-note" style="margin-top:1.5rem"><b>Tip:</b> una foto o croquis del espacio con una medida de referencia nos permite cotizar mucho más rápido.</div>
+        </div>
+        <div>
+          <div class="form-card">
+            <p class="eyebrow">Solicitud a medida</p>
+            <h2 style="font-size:1.4rem">Pide tu cotización personalizada</h2>
+            <form data-action="whatsapp" novalidate>
+              <div class="field-row">
+                <div class="field"><label>Nombre <span class="req">*</span></label><input data-label="Nombre" name="nombre" required></div>
+                <div class="field"><label>Celular <span class="req">*</span></label><input data-label="Celular" name="celular" inputmode="tel" required></div>
+              </div>
+              <div class="field"><label>¿Qué necesitas fabricar? <span class="req">*</span></label><input data-label="Producto" name="producto" placeholder="Ej. mesa con dos pozas y respaldo" required></div>
+              <div class="field-row">
+                <div class="field"><label>Largo (cm)</label><input data-label="Largo" name="largo" inputmode="numeric"></div>
+                <div class="field"><label>Ancho (cm)</label><input data-label="Ancho" name="ancho" inputmode="numeric"></div>
+              </div>
+              <div class="field-row">
+                <div class="field"><label>Alto (cm)</label><input data-label="Alto" name="alto" inputmode="numeric"></div>
+                <div class="field"><label>Tipo de acero</label>
+                  <select data-label="Acero" name="acero">
+                    <option value="">No estoy seguro / que me asesoren</option>
+                    <option>AISI 304 (contacto con alimentos)</option>
+                    <option>AISI 430 (estructura)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field"><label>Distrito o ciudad</label><input data-label="Distrito/Ciudad" name="distrito"></div>
+              <div class="field"><label>Detalles</label><textarea data-label="Detalles" name="detalles" placeholder="Niveles, entrepaños, respaldo, ubicación de desagüe, etc."></textarea></div>
+              <p class="form-note">Al enviar se abrirá WhatsApp con tu solicitud. Adjunta la foto o croquis del espacio en el chat.</p>
+              <div class="btn-row" style="margin-top:1rem"><button class="btn btn--wa btn--lg" type="submit">Enviar solicitud por WhatsApp</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/render.js"></script>
+<script src="js/site.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

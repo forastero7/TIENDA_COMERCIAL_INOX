@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Industrias Céspedes</title>
+<meta name="description" content="Política de privacidad y tratamiento de datos personales de Industrias Céspedes, conforme a la Ley N.º 29733.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header data-site-header></header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Privacidad</p>
+    <h1>Política de privacidad</h1>
+    <p>Cómo tratamos tus datos personales conforme a la Ley N.º 29733, Ley de Protección de Datos Personales.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="prose">
+      <p class="updated">Última actualización: reemplazar por la fecha de publicación.</p>
+      <p class="form-note">Texto modelo. Antes de publicar, revísalo con tu asesor legal y completa los datos de la empresa.</p>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <p>El responsable del tratamiento de los datos personales es <b id="pv-empresa">[Razón social]</b>, con RUC <span id="pv-ruc">[RUC]</span> y domicilio en <span id="pv-dir">[Dirección]</span>.</p>
+
+      <h2>2. Datos que recopilamos</h2>
+      <p>Recopilamos los datos que nos proporcionas voluntariamente al solicitar una cotización o contactarnos: nombre, número de celular, correo electrónico, rubro del negocio, distrito o ciudad, y la información de tu consulta.</p>
+
+      <h2>3. Finalidad</h2>
+      <p>Usamos tus datos para atender tu consulta, elaborar cotizaciones, coordinar la fabricación y entrega, emitir comprobantes de pago y darte seguimiento comercial. No vendemos ni cedemos tus datos a terceros con fines de marketing.</p>
+
+      <h2>4. Consentimiento</h2>
+      <p>Al enviar un formulario o escribirnos, aceptas el tratamiento de tus datos para las finalidades descritas. Puedes retirar tu consentimiento en cualquier momento.</p>
+
+      <h2>5. Conservación</h2>
+      <p>Conservamos tus datos por el tiempo necesario para la relación comercial y para cumplir obligaciones legales y tributarias.</p>
+
+      <h2>6. Tus derechos (ARCO)</h2>
+      <p>Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición escribiéndonos a <a id="pv-mail" href="#">[correo]</a>. Atenderemos tu solicitud conforme a la Ley N.º 29733 y su reglamento.</p>
+
+      <h2>7. Seguridad</h2>
+      <p>Adoptamos medidas razonables para proteger tus datos. Ninguna comunicación por internet es completamente segura, pero trabajamos para resguardar tu información.</p>
+
+      <h2>8. Cambios</h2>
+      <p>Podemos actualizar esta política. Publicaremos cualquier cambio en esta misma página con su fecha de actualización.</p>
+    </div>
+  </div>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/render.js"></script>
+<script src="js/site.js"></script>
+<script>
+  var S = window.SITE;
+  document.getElementById('pv-empresa').textContent = S.razonSocial;
+  document.getElementById('pv-ruc').textContent = S.ruc;
+  document.getElementById('pv-dir').textContent = S.direccion;
+  var m = document.getElementById('pv-mail'); m.textContent = S.correoVentas; m.href = 'mailto:' + S.correoVentas;
+</script>
+</body>
+</html>

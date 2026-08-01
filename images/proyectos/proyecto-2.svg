@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Cevichería en Callao">
+  <rect width="480" height="360" fill="#0f2444"/>
+  <g stroke="#7fb0ea" stroke-width="1" opacity=".22">
+    <line x1="0" y1="0" x2="0" y2="360"/><line x1="48" y1="0" x2="48" y2="360"/><line x1="96" y1="0" x2="96" y2="360"/><line x1="144" y1="0" x2="144" y2="360"/><line x1="192" y1="0" x2="192" y2="360"/><line x1="240" y1="0" x2="240" y2="360"/><line x1="288" y1="0" x2="288" y2="360"/><line x1="336" y1="0" x2="336" y2="360"/><line x1="384" y1="0" x2="384" y2="360"/><line x1="432" y1="0" x2="432" y2="360"/><line x1="480" y1="0" x2="480" y2="360"/>
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="48" x2="480" y2="48"/><line x1="0" y1="96" x2="480" y2="96"/><line x1="0" y1="144" x2="480" y2="144"/><line x1="0" y1="192" x2="480" y2="192"/><line x1="0" y1="240" x2="480" y2="240"/><line x1="0" y1="288" x2="480" y2="288"/><line x1="0" y1="336" x2="480" y2="336"/>
+  </g>
+  <g fill="none" stroke="#cfe0f5" stroke-width="3" stroke-linejoin="round" opacity=".9">
+    <path d="M120 170 H360 V186 H120 Z"/><path d="M140 186 V270 M340 186 V270"/><path d="M130 245 H350"/>
+  </g>
+  <text x="30" y="60" font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#7fb0ea" letter-spacing="2">PROYECTO INSTALADO</text>
+  <text x="30" y="320" font-family="-apple-system, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Cevichería</text>
+  <text x="30" y="345" font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#9fb6d6">Callao</text>
+</svg>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nosotros — Industrias Céspedes</title>
+<meta name="description" content="Fábrica peruana especialista en acero inoxidable para el sector gastronómico. Trato directo de taller, medidas a medida, higiene y garantía de fabricación.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header data-site-header></header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Nosotros</p>
+    <h1>Una fábrica, no un intermediario</h1>
+    <p>Somos fabricantes peruanos especialistas en acero inoxidable para cocinas profesionales. Atendemos directo de taller, sin intermediarios.</p>
+  </div>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>El corazón de tu cocina, fabricado en acero</h2>
+          <p>En Industrias Céspedes fabricamos mesas, lavaderos, campanas, estanterías y mobiliario de acero inoxidable de uso alimentario para pollerías, cevicherías, panaderías, restaurantes y cocinas industriales de todo el Perú.</p>
+          <p>Trabajamos con acero AISI 304 para superficies en contacto con alimentos y AISI 430 para estructuras, con el calibre adecuado a cada uso. Cada producto está pensado para el trabajo diario intenso de una cocina peruana: higiene, resistencia y facilidad de limpieza.</p>
+          <div class="hero-stats" style="margin-top:1.5rem">
+            <div><div class="num" id="n-anios" style="color:var(--marino)">10+</div><div class="lbl" style="color:var(--texto-2)">Años fabricando</div></div>
+            <div><div class="num" id="n-proy" style="color:var(--marino)">500+</div><div class="lbl" style="color:var(--texto-2)">Proyectos entregados</div></div>
+          </div>
+        </div>
+        <div class="media"><img src="images/taller.svg" alt="Taller de fabricación de Industrias Céspedes" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Por qué confiar en nosotros</p><h2>Nuestra propuesta de valor</h2></div>
+      <div class="grid benef-grid">
+        <div class="benef"><h3>Fabricación propia</h3><p>Producimos en nuestro taller, con precio directo de fábrica y sin intermediarios.</p></div>
+        <div class="benef"><h3>Acero de uso alimentario</h3><p>AISI 304 para contacto con alimentos y AISI 430 para estructuras, con el calibre que cada uso requiere.</p></div>
+        <div class="benef"><h3>Medidas personalizadas</h3><p>Fabricamos según el espacio real de tu local, no al revés.</p></div>
+        <div class="benef"><h3>Asesoría directa</h3><p>Te ayudamos por WhatsApp a elegir la solución correcta antes de comprar.</p></div>
+        <div class="benef"><h3>Boleta o factura (SUNAT)</h3><p>Emitimos comprobante electrónico para que sustentes tu compra.</p></div>
+        <div class="benef"><h3>Garantía de fabricación</h3><p>Respaldamos cada trabajo con garantía por defectos de fabricación.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Confianza</p>
+          <h2>Trabajo que se ve y se sustenta</h2>
+          <p>Mostramos nuestro taller, el proceso de fabricación y las entregas reales a clientes. Nuestra dirección, horarios, teléfono y WhatsApp están siempre visibles.</p>
+          <ul>
+            <li>Galería de proyectos instalados con su distrito o ciudad.</li>
+            <li>Acero de uso alimentario y buenas prácticas de fabricación.</li>
+            <li>Política de garantía por defectos de fabricación.</li>
+          </ul>
+          <div class="btn-row" style="margin-top:1.2rem">
+            <a class="btn btn--on-dark" href="proyectos.html">Ver proyectos</a>
+            <a class="btn btn--ghost-dark" href="contacto.html">Contáctanos</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-figure"><div class="frame">
+            <span class="tag tl">GARANTÍA DE FABRICACIÓN</span>
+            <img src="images/hero-plano.svg" alt="Especificación técnica de fabricación" loading="lazy">
+            <span class="tag br">AISI 304 / 430</span>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/render.js"></script>
+<script src="js/site.js"></script>
+<script>
+  document.getElementById('n-anios').textContent = window.SITE.aniosExperiencia;
+  document.getElementById('n-proy').textContent = window.SITE.proyectosEntregados;
+</script>
+</body>
+</html>
