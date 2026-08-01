@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de acero inoxidable — Industrias Céspedes</title>
+<meta name="description" content="Mesas, estanterías, lavaderos, campanas extractoras, cocinas industriales y más en acero inoxidable AISI 304/430. Fichas técnicas y cotización por WhatsApp.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header data-site-header></header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Productos</p>
+    <h1>Catálogo</h1>
+    <p>Equipamiento de acero inoxidable para el trabajo diario intenso de una cocina profesional. Filtra por categoría o por rubro. Todos los productos se cotizan por WhatsApp.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="catalog-layout">
+      <aside>
+        <button class="btn btn--ghost btn--block filters-toggle" id="filters-toggle" aria-expanded="false" type="button">Filtrar productos</button>
+        <div class="filters" id="filters-panel">
+          <div class="filter-group">
+            <h2>Categoría</h2>
+            <ul class="filter-list" id="filter-cats"></ul>
+          </div>
+          <div class="filter-group">
+            <h2>Colección por rubro</h2>
+            <ul class="filter-list" id="filter-rubros"></ul>
+          </div>
+        </div>
+      </aside>
+      <div>
+        <div class="catalog-bar">
+          <p class="result" id="catalog-result"></p>
+        </div>
+        <div class="grid prod-grid" id="catalog-grid"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/render.js"></script>
+<script src="js/site.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>

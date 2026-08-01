@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Taller de fabricación">
+  <rect width="600" height="420" fill="#eef2f6"/>
+  <g stroke="#c3cddb" stroke-width="1" opacity=".5">
+    <line x1="0" y1="0" x2="0" y2="420"/><line x1="48" y1="0" x2="48" y2="420"/><line x1="96" y1="0" x2="96" y2="420"/><line x1="144" y1="0" x2="144" y2="420"/><line x1="192" y1="0" x2="192" y2="420"/><line x1="240" y1="0" x2="240" y2="420"/><line x1="288" y1="0" x2="288" y2="420"/><line x1="336" y1="0" x2="336" y2="420"/><line x1="384" y1="0" x2="384" y2="420"/><line x1="432" y1="0" x2="432" y2="420"/><line x1="480" y1="0" x2="480" y2="420"/><line x1="528" y1="0" x2="528" y2="420"/><line x1="576" y1="0" x2="576" y2="420"/>
+    <line x1="0" y1="0" x2="600" y2="0"/><line x1="0" y1="48" x2="600" y2="48"/><line x1="0" y1="96" x2="600" y2="96"/><line x1="0" y1="144" x2="600" y2="144"/><line x1="0" y1="192" x2="600" y2="192"/><line x1="0" y1="240" x2="600" y2="240"/><line x1="0" y1="288" x2="600" y2="288"/><line x1="0" y1="336" x2="600" y2="336"/><line x1="0" y1="384" x2="600" y2="384"/>
+  </g>
+  <g fill="none" stroke="#0f2444" stroke-width="2.6" stroke-linejoin="round">
+    <path d="M120 180 H300 V320 H120 Z"/><path d="M140 180 V320 M280 180 V320"/><path d="M130 280 H290"/>
+    <path d="M340 210 H480 L450 300 H370 Z"/><path d="M370 300 H450 M370 315 H450"/>
+  </g>
+  <text x="30" y="60" font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#2f6fbf" letter-spacing="2">TALLER — FOTO REFERENCIAL</text>
+  <text x="30" y="392" font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#0f2444" opacity=".55">Reemplazar por foto real del taller y del proceso de fabricación</text>
+</svg>

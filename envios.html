@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Envíos y entregas — Industrias Céspedes</title>
+<meta name="description" content="Entrega coordinada en Lima Metropolitana y Callao, y despacho a provincias por agencia de carga. Tiempos, embalaje reforzado y recojo en taller.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header data-site-header></header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Envíos y entregas</p>
+    <h1>Envíos y entregas</h1>
+    <p>La logística no debe frenar tu compra. Así entregamos en Lima y despachamos a todo el Perú.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="grid info-grid">
+      <div class="info-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 13h11V6H3zM14 9h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>Lima Metropolitana y Callao</h3>
+        <p>Entrega coordinada con movilidad propia o flete local. El costo depende del distrito y del tamaño del producto. Lo confirmamos al cotizar.</p>
+      </div>
+      <div class="info-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Provincias</h3>
+        <p>Despacho por agencia de carga o transporte interprovincial. Puedes elegir tu agencia de confianza. El flete lo paga el cliente en destino, salvo acuerdo distinto.</p>
+      </div>
+      <div class="info-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7l8-4 8 4v10l-8 4-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>Embalaje reforzado</h3>
+        <p>Los productos grandes salen con embalaje reforzado para el viaje. Coordinamos quién asume el traslado hasta la agencia.</p>
+      </div>
+      <div class="info-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Tiempos estimados</h3>
+        <p>Tiempo total = fabricación (días hábiles, según el producto) + tránsito según destino. Te damos ambos plazos al momento de cotizar.</p>
+      </div>
+      <div class="info-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M6 21V8l6-4 6 4v13"/><path d="M9 21v-6h6v6"/></svg>Recojo en taller</h3>
+        <p>Si prefieres, puedes recoger tu pedido directamente en el taller, dentro del horario de atención.</p>
+      </div>
+      <div class="info-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V8l8-4 8 4v12M9 20v-6h6v6"/></svg>Instalación (opcional)</h3>
+        <p>Para campanas y mostradores ofrecemos armado o instalación como servicio adicional, con cobertura definida al cotizar.</p>
+      </div>
+    </div>
+
+    <div class="cta-band section" style="margin-top:3rem;border-radius:var(--radio)">
+      <div class="container">
+        <div class="split">
+          <div>
+            <p class="eyebrow">¿Tienes un producto grande?</p>
+            <h2>Cotiza tu envío</h2>
+            <p>Dinos el producto y tu ciudad o distrito, y te damos el costo y el tiempo de entrega.</p>
+          </div>
+          <div class="btn-row" style="justify-content:flex-end">
+            <a class="btn btn--wa btn--lg" id="e-wa" href="#" target="_blank" rel="noopener">Cotizar mi envío</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/render.js"></script>
+<script src="js/site.js"></script>
+<script>document.getElementById('e-wa').href = window.waLink('quiero cotizar un envío a mi ciudad');</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libro de Reclamaciones — Industrias Céspedes</title>
+<meta name="description" content="Libro de Reclamaciones virtual de Industrias Céspedes. Registra tu reclamo o queja conforme al Código de Protección y Defensa del Consumidor.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header data-site-header></header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Libro de Reclamaciones</p>
+    <h1>Libro de Reclamaciones</h1>
+    <p>Conforme al Código de Protección y Defensa del Consumidor (Ley N.º 29571). Registra aquí tu reclamo o queja.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="form-card" style="max-width:820px;margin-inline:auto">
+      <p class="form-note" id="lr-empresa">Hoja de Reclamación — Industrias Céspedes</p>
+      <form data-action="email" novalidate>
+        <p class="eyebrow">1. Identificación del consumidor</p>
+        <div class="field-row">
+          <div class="field"><label>Nombre completo <span class="req">*</span></label><input data-label="Nombre" name="nombre" required></div>
+          <div class="field"><label>Documento (DNI/CE/RUC) <span class="req">*</span></label><input data-label="Documento" name="documento" required></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Teléfono <span class="req">*</span></label><input data-label="Teléfono" name="telefono" inputmode="tel" required></div>
+          <div class="field"><label>Correo electrónico</label><input data-label="Correo" name="correo" type="email"></div>
+        </div>
+        <div class="field"><label>Domicilio</label><input data-label="Domicilio" name="domicilio"></div>
+
+        <p class="eyebrow" style="margin-top:1.5rem">2. Identificación del bien contratado</p>
+        <div class="field-row">
+          <div class="field"><label>Tipo</label>
+            <select data-label="Tipo de bien" name="tipobien"><option>Producto</option><option>Servicio</option></select>
+          </div>
+          <div class="field"><label>Monto reclamado (S/)</label><input data-label="Monto" name="monto" inputmode="decimal"></div>
+        </div>
+        <div class="field"><label>Descripción del producto o servicio</label><input data-label="Descripción del bien" name="bien" placeholder="Ej. Mesa de trabajo 120×60×90 – MT-120"></div>
+
+        <p class="eyebrow" style="margin-top:1.5rem">3. Detalle</p>
+        <div class="field">
+          <label>Tipo <span class="req">*</span></label>
+          <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:.3rem">
+            <label style="font-weight:400"><input type="radio" name="tipo" value="Reclamo" data-label="Tipo" required> <b>Reclamo</b> — disconformidad con el producto o servicio</label>
+            <label style="font-weight:400"><input type="radio" name="tipo" value="Queja" data-label="Tipo"> <b>Queja</b> — malestar respecto a la atención</label>
+          </div>
+        </div>
+        <div class="field"><label>Detalle del reclamo o queja <span class="req">*</span></label><textarea data-label="Detalle" name="detalle" required></textarea></div>
+        <div class="field"><label>Pedido concreto del consumidor</label><textarea data-label="Pedido" name="pedido"></textarea></div>
+
+        <p class="form-note">Al enviar se abrirá tu correo con la hoja lista para remitir a la empresa. El proveedor debe dar respuesta en un plazo no mayor a 15 días hábiles. La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito para presentar una denuncia ante INDECOPI.</p>
+        <p class="form-ok" hidden style="color:#14663b;font-weight:700">Se preparó tu correo con la hoja de reclamación. Revísalo y envíalo para que quede registrado.</p>
+        <div class="btn-row" style="margin-top:1rem"><button class="btn btn--lg" type="submit">Registrar y enviar</button></div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer data-site-footer></footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/render.js"></script>
+<script src="js/site.js"></script>
+<script src="js/forms.js"></script>
+<script>
+  var S = window.SITE;
+  document.getElementById('lr-empresa').textContent =
+    'Hoja de Reclamación — ' + S.razonSocial + ' · RUC ' + S.ruc + ' · ' + S.direccion;
+</script>
+</body>
+</html>

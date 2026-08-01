@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Reemplaza el dominio por el definitivo antes de publicar
+Sitemap: https://industriascespedes.pe/sitemap.xml

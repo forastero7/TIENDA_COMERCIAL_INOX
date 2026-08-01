@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="COCINAS">
+  <rect width="480" height="360" fill="#eef2f6"/>
+  <g stroke="#c3cddb" stroke-width="1" opacity=".5">
+    <line x1="0" y1="0" x2="0" y2="360"/><line x1="48" y1="0" x2="48" y2="360"/><line x1="96" y1="0" x2="96" y2="360"/><line x1="144" y1="0" x2="144" y2="360"/><line x1="192" y1="0" x2="192" y2="360"/><line x1="240" y1="0" x2="240" y2="360"/><line x1="288" y1="0" x2="288" y2="360"/><line x1="336" y1="0" x2="336" y2="360"/><line x1="384" y1="0" x2="384" y2="360"/><line x1="432" y1="0" x2="432" y2="360"/><line x1="480" y1="0" x2="480" y2="360"/>
+    <line x1="0" y1="0" x2="480" y2="0"/><line x1="0" y1="48" x2="480" y2="48"/><line x1="0" y1="96" x2="480" y2="96"/><line x1="0" y1="144" x2="480" y2="144"/><line x1="0" y1="192" x2="480" y2="192"/><line x1="0" y1="240" x2="480" y2="240"/><line x1="0" y1="288" x2="480" y2="288"/><line x1="0" y1="336" x2="480" y2="336"/>
+  </g>
+  <path d="M110 150 H370 V255 H110 Z" fill="none" stroke="#0f2444" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" /><path d="M110 185 H370" fill="none" stroke="#0f2444" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" /><circle cx="175" cy="170" r="14" fill="none" stroke="#0f2444" stroke-width="2.4"/><circle cx="240" cy="170" r="14" fill="none" stroke="#0f2444" stroke-width="2.4"/><circle cx="305" cy="170" r="14" fill="none" stroke="#0f2444" stroke-width="2.4"/><g stroke="#2f6fbf" stroke-width="1.4" fill="#2f6fbf">
+    <line x1="110" y1="279" x2="110" y2="291"/>
+    <line x1="370" y1="279" x2="370" y2="291"/>
+    <line x1="110" y1="285" x2="370" y2="285"/>
+    <rect x="214" y="274" width="52" height="22" fill="#eef2f6" stroke="none"/>
+    <text x="240" y="289" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="12" stroke="none">100 cm</text>
+  </g>
+  <text x="24" y="338" font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#2f6fbf" letter-spacing="1.5">FOTO REFERENCIAL — REEMPLAZAR</text>
+  <text x="456" y="30" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#0f2444" opacity=".55">COCINAS</text>
+</svg>
