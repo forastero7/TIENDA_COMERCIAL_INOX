@@ -54,6 +54,25 @@ window.SITE = {
     pasarelas: { culqi: false, niubiz: false, izipay: false, mercadopago: false }
   },
 
+  // --- Envío por zona (Fase 3) ---
+  // TARIFAS DE EJEMPLO en soles. Reemplaza por tus costos reales por distrito
+  // y tamaño. El envío en Lima es un estimado; se confirma al procesar el pedido.
+  envio: {
+    // Recargo si el pedido incluye un producto voluminoso (según categorías de abajo)
+    recargoVoluminoso: 40,
+    categoriasVoluminosas: ['campanas', 'exhibidoras', 'cocinas', 'lavaderos', 'mesas'],
+    provinciaNota: 'Despacho por agencia de carga; el flete se paga en destino, salvo acuerdo distinto.',
+    recojoNota: 'Recojo gratuito en el taller, dentro del horario de atención.',
+    limaZonas: [
+      { id: 'centro',  nombre: 'Lima Centro',  costo: 30, distritos: ['Cercado de Lima', 'Breña', 'La Victoria', 'Rímac', 'Lince', 'Jesús María', 'Pueblo Libre'] },
+      { id: 'moderna', nombre: 'Lima Moderna', costo: 35, distritos: ['Miraflores', 'San Isidro', 'Surco', 'San Borja', 'Barranco', 'Magdalena', 'San Miguel', 'Surquillo'] },
+      { id: 'norte',   nombre: 'Lima Norte',   costo: 45, distritos: ['Los Olivos', 'San Martín de Porres', 'Comas', 'Independencia', 'Carabayllo', 'Puente Piedra'] },
+      { id: 'sur',     nombre: 'Lima Sur',     costo: 45, distritos: ['Villa María del Triunfo', 'Villa El Salvador', 'San Juan de Miraflores', 'Chorrillos', 'Lurín', 'Pachacámac'] },
+      { id: 'este',    nombre: 'Lima Este',    costo: 45, distritos: ['San Juan de Lurigancho', 'Ate', 'Santa Anita', 'El Agustino', 'La Molina', 'Chaclacayo'] },
+      { id: 'callao',  nombre: 'Callao',       costo: 40, distritos: ['Callao', 'Bellavista', 'La Perla', 'La Punta', 'Carmen de la Legua', 'Ventanilla'] }
+    ]
+  },
+
   // --- Redes sociales (deja '' para ocultar el ícono) ---
   redes: {
     facebook: 'https://facebook.com/',   // PLACEHOLDER

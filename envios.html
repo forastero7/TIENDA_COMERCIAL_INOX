@@ -48,6 +48,16 @@
       </div>
     </div>
 
+    <div class="split" style="margin-top:3rem">
+      <div>
+        <p class="eyebrow">Estimador de envío</p>
+        <h2>Calcula tu envío en segundos</h2>
+        <p>Elige tu zona y el tamaño del producto para ver un estimado. El costo final en Lima se confirma al procesar tu pedido; a provincias, el flete se paga en destino.</p>
+        <p class="form-note">Tarifas referenciales de ejemplo — reemplázalas por tus costos reales en <code>js/config.js</code>.</p>
+      </div>
+      <div class="form-card" id="envio-estimator"></div>
+    </div>
+
     <div class="cta-band section" style="margin-top:3rem;border-radius:var(--radio)">
       <div class="container">
         <div class="split">
@@ -70,7 +80,12 @@
 <script src="js/config.js"></script>
 <script src="js/products.js"></script>
 <script src="js/render.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shipping.js"></script>
 <script src="js/site.js"></script>
-<script>document.getElementById('e-wa').href = window.waLink('quiero cotizar un envío a mi ciudad');</script>
+<script>
+  document.getElementById('e-wa').href = window.waLink('quiero cotizar un envío a mi ciudad');
+  window.SHIPPING.mountEstimator(document.getElementById('envio-estimator'));
+</script>
 </body>
 </html>

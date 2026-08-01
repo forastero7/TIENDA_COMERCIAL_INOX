@@ -104,6 +104,10 @@ Ya incluida en esta entrega, con datos y precios de **ejemplo**:
   modalidad de entrega y **medio de pago** (Yape, Plin, transferencia, contra entrega). Al
   confirmar, genera el pedido por **WhatsApp** con el detalle y muestra las instrucciones de
   pago (número Yape/Plin y cuenta bancaria de `js/config.js`).
+- **Cálculo de envío por zona** (`js/shipping.js`, tarifas en `SITE.envio` de `js/config.js`):
+  estimado por zona de Lima + recargo por producto voluminoso; provincias = flete por cobrar
+  en destino; recojo en taller = gratis. Se integra en el checkout (suma al total) y como
+  **estimador** en la página de Envíos. Las tarifas son de ejemplo: reemplázalas por las reales.
 
 ### Conectar una pasarela de tarjeta (siguiente paso de Fase 3)
 
