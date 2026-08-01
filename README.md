@@ -58,6 +58,8 @@ Son placeholders con estilo de plano técnico. Reemplaza por **fotos reales**:
 index.html              Inicio
 productos.html          Catálogo (filtros por categoría y rubro)
 producto.html           Ficha de producto (?id=CODIGO)
+carrito.html            Carrito de compras (Fase 3)
+checkout.html           Finalizar pedido: datos, entrega y pago (Fase 3)
 a-medida.html           Formulario de fabricación personalizada
 proyectos.html          Galería de proyectos
 envios.html             Envíos y entregas (Lima / provincias)
@@ -71,9 +73,12 @@ js/config.js            >>> DATOS DEL NEGOCIO (editar aquí) <<<
 js/products.js          Datos del catálogo
 js/render.js            Constructores de tarjetas
 js/site.js              Header, footer y botón flotante de WhatsApp
-js/catalog.js           Grid + filtros del catálogo
+js/catalog.js           Grid + filtros + buscador del catálogo
 js/product.js           Ficha de producto
 js/home.js              Render del inicio
+js/cart.js              Carrito (localStorage) + badge del header
+js/cart-page.js         Render de carrito.html
+js/checkout.js          Lógica del checkout
 js/forms.js             Formularios -> WhatsApp / correo (sin backend)
 images/                 Imágenes (placeholders a reemplazar)
 favicon.svg · robots.txt · sitemap.xml
@@ -86,12 +91,35 @@ abren WhatsApp con el mensaje ya redactado; el **Libro de Reclamaciones** abre e
 la empresa con la hoja lista para remitir. Cuando quieras recibir los envíos en un correo o
 CRM, conecta los `<form>` a un servicio como Formspree/Getform o a WhatsApp Business API.
 
+## Fase 3 (carrito y pagos) — iniciada
+
+Ya incluida en esta entrega, con datos y precios de **ejemplo**:
+
+- **Precios referenciales** en `js/products.js` (campo `precio` en soles; `null` = "Cotizar
+  precio", para productos a medida / bajo pedido especial). Reemplázalos por los reales.
+- **Carrito** (`js/cart.js`, `carrito.html`) con estado en `localStorage`, contador en el
+  header, cantidades y desglose de IGV. Solo los productos con precio son "vendibles"; los
+  cotizables siguen yendo a WhatsApp.
+- **Checkout** (`checkout.html`, `js/checkout.js`): datos del cliente, boleta/factura,
+  modalidad de entrega y **medio de pago** (Yape, Plin, transferencia, contra entrega). Al
+  confirmar, genera el pedido por **WhatsApp** con el detalle y muestra las instrucciones de
+  pago (número Yape/Plin y cuenta bancaria de `js/config.js`).
+
+### Conectar una pasarela de tarjeta (siguiente paso de Fase 3)
+
+El pago con tarjeta (Culqi / Niubiz / Izipay / Mercado Pago) requiere **backend + credenciales
+de comercio**, por lo que aparece como "Próximamente" hasta integrarlo. Para activarlo:
+1. Implementa un endpoint de servidor que cree el cargo/orden con el proveedor elegido.
+2. Pon en `true` la pasarela correspondiente en `SITE.tienda.pasarelas` (`js/config.js`).
+3. Conecta el botón de pago del checkout al SDK/redirección del proveedor.
+
 ## Próximas fases (del brief)
 
-- **Fase 2:** buscador, más filtros, galería de proyectos ampliada, reseñas de Google
-  integradas y guías SEO (blog): "Cómo equipar una pollería", "AISI 304 vs 430", etc.
-- **Fase 3:** carrito y pagos online (Culqi / Niubiz / Izipay / Mercado Pago), cálculo de
-  envío y facturación electrónica integrada.
+- **Fase 2:** más filtros, galería de proyectos ampliada, reseñas de Google integradas y
+  guías SEO (blog): "Cómo equipar una pollería", "AISI 304 vs 430", etc. (El buscador ya
+  está implementado.)
+- **Fase 3 (resto):** pasarela de tarjeta con cuotas y cálculo de envío automatizado +
+  facturación electrónica integrada.
 - **Fase 4:** CRM y automatización de seguimiento de leads, remarketing y analítica avanzada.
 
 ## Notas de diseño

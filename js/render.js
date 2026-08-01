@@ -23,21 +23,28 @@
   function productCard(p) {
     var a = AVAIL[p.disponibilidad] || AVAIL.pedido;
     var medidas = (p.specs && p.specs.medidas) ? p.specs.medidas.split('—')[0].trim() : '';
+    var vendible = p.precio != null;
+    var accion = vendible
+      ? '<button class="btn btn--add" type="button" data-add="' + esc(p.id) + '">Agregar</button>'
+      : '<span class="foot-quote">Cotizar</span>';
     return '' +
-      '<a class="prod-card" href="producto.html?id=' + encodeURIComponent(p.id) + '">' +
-        '<div class="thumb">' +
-          '<span class="code">' + esc(p.id) + '</span>' +
-          '<img src="' + esc(p.img) + '" alt="' + esc(p.nombre) + '" loading="lazy">' +
-        '</div>' +
-        '<div class="body">' +
-          '<h3>' + esc(p.nombre) + '</h3>' +
-          '<span class="meta">' + esc(medidas) + '</span>' +
-          '<div class="foot">' +
-            '<span class="price">' + precioTxt(p.precio) + '</span>' +
+      '<article class="prod-card">' +
+        '<a class="prod-card__link" href="producto.html?id=' + encodeURIComponent(p.id) + '">' +
+          '<div class="thumb">' +
+            '<span class="code">' + esc(p.id) + '</span>' +
+            '<img src="' + esc(p.img) + '" alt="' + esc(p.nombre) + '" loading="lazy">' +
+          '</div>' +
+          '<div class="body">' +
+            '<h3>' + esc(p.nombre) + '</h3>' +
+            '<span class="meta">' + esc(medidas) + '</span>' +
             '<span class="badge ' + a.cls + '">' + a.txt + '</span>' +
           '</div>' +
+        '</a>' +
+        '<div class="foot">' +
+          '<span class="price">' + precioTxt(p.precio) + '</span>' +
+          accion +
         '</div>' +
-      '</a>';
+      '</article>';
   }
 
   // Tarjeta de categoría ----------------------------------------------------

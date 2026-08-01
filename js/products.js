@@ -52,7 +52,7 @@ window.PRODUCTS = [
       capacidad: 'Hasta 120 kg distribuidos',
       acabado: 'Satinado sanitario, esquinas redondeadas'
     },
-    precio: null,
+    precio: 850,
     disponibilidad: 'pedido',
     dias: 5,
     destacado: true
@@ -72,7 +72,7 @@ window.PRODUCTS = [
       capacidad: 'Hasta 150 kg distribuidos',
       acabado: 'Satinado sanitario'
     },
-    precio: null,
+    precio: 1150,
     disponibilidad: 'pedido',
     dias: 6,
     destacado: false
@@ -92,7 +92,7 @@ window.PRODUCTS = [
       capacidad: 'Desagüe reforzado 2"',
       acabado: 'Satinado sanitario, soldadura sellada'
     },
-    precio: null,
+    precio: 1350,
     disponibilidad: 'pedido',
     dias: 7,
     destacado: true
@@ -112,7 +112,7 @@ window.PRODUCTS = [
       capacidad: 'Accionamiento a rodilla',
       acabado: 'Satinado sanitario'
     },
-    precio: null,
+    precio: 520,
     disponibilidad: 'stock',
     dias: null,
     destacado: false
@@ -152,7 +152,7 @@ window.PRODUCTS = [
       capacidad: 'Hasta 80 kg por nivel',
       acabado: 'Satinado, patas niveladoras'
     },
-    precio: null,
+    precio: 780,
     disponibilidad: 'pedido',
     dias: 5,
     destacado: false
@@ -172,7 +172,7 @@ window.PRODUCTS = [
       capacidad: 'Hasta 40 kg distribuidos',
       acabado: 'Satinado, bordes doblados'
     },
-    precio: null,
+    precio: 260,
     disponibilidad: 'stock',
     dias: null,
     destacado: false
@@ -212,7 +212,7 @@ window.PRODUCTS = [
       capacidad: 'Hasta 200 kg distribuidos',
       acabado: 'Satinado, patas niveladoras'
     },
-    precio: null,
+    precio: 990,
     disponibilidad: 'pedido',
     dias: 8,
     destacado: false
@@ -232,7 +232,7 @@ window.PRODUCTS = [
       capacidad: 'Hasta 60 kg por nivel',
       acabado: 'Satinado, 4 ruedas (2 con freno)'
     },
-    precio: null,
+    precio: 690,
     disponibilidad: 'stock',
     dias: null,
     destacado: true
@@ -252,7 +252,7 @@ window.PRODUCTS = [
       capacidad: 'Bandejas 45 × 65 cm',
       acabado: 'Satinado, 4 ruedas (2 con freno)'
     },
-    precio: null,
+    precio: 1250,
     disponibilidad: 'pedido',
     dias: 9,
     destacado: false

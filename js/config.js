@@ -33,12 +33,25 @@ window.SITE = {
   aniosExperiencia: '10+',            // PLACEHOLDER
   proyectosEntregados: '500+',        // PLACEHOLDER
 
-  // --- Medios de pago (se muestran como señal de confianza, sin checkout) ---
+  // --- Medios de pago ---
   pagos: {
     yape: '999 999 999',              // PLACEHOLDER — número Yape a nombre de la empresa
     plin: '999 999 999',             // PLACEHOLDER — número Plin
     bancos: ['BCP', 'Interbank', 'BBVA', 'Scotiabank'],
+    // Cuenta para transferencias (PLACEHOLDER — reemplaza por la cuenta real de la empresa)
+    cuenta: { banco: 'BCP', numero: '000-0000000-0-00', cci: '000-000-0000000000-00', titular: 'INDUSTRIAS CÉSPEDES S.A.C.' },
     nota: 'Cuentas a nombre de la empresa. Emitimos boleta o factura electrónica (SUNAT).'
+  },
+
+  // --- Tienda / carrito (Fase 3) ---
+  tienda: {
+    moneda: 'S/',
+    igvIncluido: true,               // los precios ya incluyen IGV (18%)
+    igv: 0.18,
+    adelanto: 0.5,                   // adelanto sugerido para iniciar fabricación
+    // Pasarelas de pago con tarjeta: requieren backend + credenciales de comercio.
+    // Actívalas cuando integres el proveedor (ver README, Fase 3).
+    pasarelas: { culqi: false, niubiz: false, izipay: false, mercadopago: false }
   },
 
   // --- Redes sociales (deja '' para ocultar el ícono) ---

@@ -14,7 +14,8 @@
     fb: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9V11H7.5v3H10v8h3z"/></svg>',
     ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>',
     tk: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2 1.5 3.5 3.5 3.8V9c-1.3 0-2.5-.4-3.5-1.1V15c0 3-2.2 5-5 5s-5-2.2-5-5 2.4-5.2 5.4-4.9v2.4c-.3-.1-.6-.1-.9-.1-1.4 0-2.5 1.1-2.5 2.6S9 17.5 10.4 17.5s2.6-1.1 2.6-2.6V3h3.5z"/></svg>',
-    libro: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 4h9a2 2 0 012 2v14H6a2 2 0 01-2-2V4z"/><path d="M20 4h-3v16h3V4z"/><path d="M7 8h6M7 11h6"/></svg>'
+    libro: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 4h9a2 2 0 012 2v14H6a2 2 0 01-2-2V4z"/><path d="M20 4h-3v16h3V4z"/><path d="M7 8h6M7 11h6"/></svg>',
+    cart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 5h2l1.5 11h10L20 8H7"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>'
   };
 
   // Estructura de navegación ------------------------------------------------
@@ -60,6 +61,8 @@
         '<button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">' + ICON.menu + '</button>' +
         '<ul class="nav-links" id="nav-links">' + links + '</ul>' +
         '<div class="nav-cta">' +
+          '<a class="cart-link" href="carrito.html" aria-label="Ver carrito">' + ICON.cart +
+            '<span class="cart-badge" data-cart-count hidden>0</span></a>' +
           '<a class="btn btn--wa hide-mobile" href="' + window.waLink() + '" target="_blank" rel="noopener">' + ICON.wa + 'Cotizar</a>' +
         '</div>' +
       '</div>';
@@ -102,6 +105,7 @@
               '<li><a href="productos.html?cat=lavaderos">Lavaderos</a></li>' +
               '<li><a href="productos.html?cat=campanas">Campanas extractoras</a></li>' +
               '<li><a href="a-medida.html">Fabricación a medida</a></li>' +
+              '<li><a href="carrito.html">Carrito de compras</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
@@ -161,6 +165,8 @@
     if (h) buildHeader(h);
     if (f) buildFooter(f);
     buildFloat();
+    // Notifica para que el carrito (si está cargado) pinte el badge del header
+    document.dispatchEvent(new CustomEvent('cart:change'));
   }
 
   if (document.readyState === 'loading') {
