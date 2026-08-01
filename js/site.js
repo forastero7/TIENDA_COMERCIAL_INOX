@@ -165,8 +165,20 @@
     if (h) buildHeader(h);
     if (f) buildFooter(f);
     buildFloat();
+    associateLabels();
     // Notifica para que el carrito (si está cargado) pinte el badge del header
     document.dispatchEvent(new CustomEvent('cart:change'));
+  }
+
+  // Accesibilidad: asocia cada <label> de .field con el control que le sigue
+  function associateLabels() {
+    document.querySelectorAll('.field').forEach(function (f, i) {
+      var label = f.querySelector('label');
+      var ctrl = f.querySelector('input, select, textarea');
+      if (!label || !ctrl) return;
+      if (!ctrl.id) ctrl.id = 'f-' + (ctrl.name || 'campo') + '-' + i;
+      if (!label.getAttribute('for')) label.setAttribute('for', ctrl.id);
+    });
   }
 
   if (document.readyState === 'loading') {

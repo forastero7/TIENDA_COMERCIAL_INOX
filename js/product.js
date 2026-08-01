@@ -57,7 +57,9 @@
         '<div class="main"><img id="ficha-main" src="' + R.esc(p.img) + '" alt="' + R.esc(p.nombre) + '"></div>' +
         '<div class="thumbs">' +
           '<button aria-current="true"><img src="' + R.esc(p.img) + '" alt="Vista principal"></button>' +
-          '<button aria-current="false"><img src="images/cat/' + R.esc(p.categoria) + '.svg" alt="Detalle referencial"></button>' +
+          ((p.imgs && p.imgs[1] && p.imgs[1] !== p.img)
+            ? '<button aria-current="false"><img src="' + R.esc(p.imgs[1]) + '" alt="Otra vista de ' + R.esc(p.nombre) + '"></button>'
+            : '') +
         '</div>' +
       '</div>' +
       '<div class="details">' +

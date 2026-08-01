@@ -10,8 +10,22 @@
     return el ? el.value.trim() : '';
   }
 
+  // Valida los campos obligatorios antes de enviar; devuelve true si faltan.
+  function faltanObligatorios(form) {
+    var faltan = [].slice.call(form.querySelectorAll('[required]')).filter(function (el) {
+      return !String(el.value || '').trim();
+    });
+    if (faltan.length) {
+      faltan[0].focus();
+      if (faltan[0].reportValidity) faltan[0].reportValidity();
+      return true;
+    }
+    return false;
+  }
+
   // --- Formulario de cotización / a medida -> WhatsApp ---------------------
   function toWhatsApp(form) {
+    if (faltanObligatorios(form)) return;
     var lineas = [];
     var campos = form.querySelectorAll('[data-label]');
     campos.forEach(function (el) {
@@ -25,6 +39,7 @@
 
   // --- Libro de Reclamaciones -> correo -----------------------------------
   function toEmail(form) {
+    if (faltanObligatorios(form)) return false;
     var lineas = [];
     form.querySelectorAll('[data-label]').forEach(function (el) {
       var v = el.value ? el.value.trim() : '';
@@ -43,7 +58,7 @@
   document.querySelectorAll('form[data-action="email"]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      toEmail(form);
+      if (toEmail(form) === false) return;
       var ok = form.querySelector('.form-ok');
       if (ok) ok.hidden = false;
     });
