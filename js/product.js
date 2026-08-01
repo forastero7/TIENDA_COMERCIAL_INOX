@@ -85,4 +85,30 @@
     bc.innerHTML = '<a href="index.html">Inicio</a> / <a href="productos.html">Productos</a> / ' +
       '<a href="productos.html?cat=' + p.categoria + '">' + (c ? R.esc(c.nombre) : 'Catálogo') + '</a>';
   }
+
+  // Datos estructurados schema.org (SEO) ------------------------------------
+  var availMap = {
+    stock: 'https://schema.org/InStock',
+    pedido: 'https://schema.org/PreOrder',
+    personalizado: 'https://schema.org/MadeToOrder'
+  };
+  var ld = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: p.nombre,
+    sku: p.id,
+    description: p.descripcion,
+    material: (p.specs && p.specs.acero) || 'Acero inoxidable',
+    brand: { '@type': 'Brand', name: (window.SITE && window.SITE.marca) || 'Industrias Céspedes' }
+  };
+  if (p.precio != null) {
+    ld.offers = {
+      '@type': 'Offer', priceCurrency: 'PEN', price: String(p.precio),
+      availability: availMap[p.disponibilidad] || availMap.pedido
+    };
+  }
+  var s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(ld);
+  document.head.appendChild(s);
 })();
