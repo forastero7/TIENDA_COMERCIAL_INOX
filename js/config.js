@@ -13,11 +13,11 @@ window.SITE = {
 
   // --- WhatsApp (canal principal de conversión) ---
   // Formato internacional SIN "+", SIN espacios. Perú = 51 + número (9 dígitos).
-  whatsapp: '51999999999',            // PLACEHOLDER — número de ejemplo
+  whatsapp: '51929523437',            // WhatsApp de ventas
   whatsappTexto: 'Hola, quiero cotizar', // saludo base de los mensajes prellenados
 
   // --- Contacto ---
-  telefono: '(01) 000 0000',          // PLACEHOLDER
+  telefono: '+51 929 523 437',        // teléfono / WhatsApp
   correoVentas: 'ventas@industriascespedes.pe',        // PLACEHOLDER
   correoCotizaciones: 'cotizaciones@industriascespedes.pe', // PLACEHOLDER
 
